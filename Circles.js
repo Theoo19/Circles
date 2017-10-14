@@ -65,7 +65,7 @@ function Circles(x, y, radius, color){
 
 function create(){
 	check_collision = true
-	radius = 0
+	radius = 1
 	color = ColorArray[randint(0, ColorArray.length)]
 	while (check_collision){
 		check_collision = false
@@ -74,7 +74,7 @@ function create(){
 		for (var i = 0; i < CirclesArray.length; i++){
 			circle = CirclesArray[i]
 			distance = Math.sqrt((x - circle.x)**2 + (y - circle.y)**2)
-			if (distance <= circle.radius){
+			if (distance <= circle.radius + 1){
 				check_collision = true
 			}
 		}
