@@ -3,9 +3,6 @@ var c = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-innerWidth = 720
-innerHeight = 1280
-
 window.addEventListener("resize", function(event) {
 	canvas.width  = innerWidth;
 	canvas.height = innerHeight;
